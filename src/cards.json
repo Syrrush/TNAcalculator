@@ -1,0 +1,22 @@
+{
+    "cards" : [
+
+        
+            {
+                "name": "Mercado Pago" ,
+                "TNA": 0.863,
+                "image": "https://1000marcas.net/wp-content/uploads/2023/01/Mercado-Pago-Logo.png"
+                },
+            {
+                "name":  "Naranja X" ,
+                "TNA": 0.95,
+                "image": "https://static.misionesonline.news/wp-content/uploads/2021/05/Naranja-X-Nuevo-logo-1024x724-1.png"
+                },
+           {
+                "name":"Personal Pay" ,
+                "TNA": 0.90,
+                "image": "https://www.personalpay.com.ar/images/Logo.png"
+                }
+        
+    ] 
+}
