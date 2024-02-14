@@ -19,32 +19,39 @@ export default function Calculator({ selectedCard }) {
     setResultado(amount);
   };
   return (
-    <div className="p-4">
+    <div className="p-4 dark:bg-gray-800 dark:text-gray-100 mt-32 mr-20">
       <h2 className="text-xl font-bold mb-4">
         Complete la información para {selectedCard?.name}
       </h2>
       <input
         type="number"
         placeholder="Ingrese su monto inicial"
-        className="input input-bordered input-primary w-full mb-4"
+        className="bg-gray-700 text-white rounded-lg input input-bordered input-primary w-full mb-4"
         value={numero1}
         onChange={handleNumero1Change}
       />
       <input
         type="number"
         placeholder="Ingrese los días que quiere tener el dinero"
-        className="input input-bordered input-primary w-full mb-4"
+        className=" bg-gray-700 text-white rounded-lg input input-bordered input-primary w-full mb-4"
         value={numero2}
         onChange={handleNumero2Change}
       />
-      <button className="btn btn-primary w-full mb-4" onClick={resolve}>
+      <button
+        className=" bg-blue-500 hover:bg-blue-700 text-white btn btn-primary w-full mb-4"
+        onClick={resolve}
+      >
         Calcular
       </button>
       <p>
         Resultado: Dentro de {numero2} días, tendrá ${resultado.toFixed(2)}{" "}
         pesos
       </p>
-      <p>Ganancia: ${(resultado - numero1).toFixed(2)} pesos</p>
+      {resultado > 0 ? (
+        <p>Ganancia: ${(resultado - numero1).toFixed(2)} pesos</p>
+      ) : (
+        ""
+      )}
     </div>
   );
 }

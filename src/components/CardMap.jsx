@@ -4,7 +4,7 @@ import allCards from "../cards.json";
 // import Calculator from "./Calculator.jsx";
 export default function CardMap({ onCardClick, selectedCard }) {
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col">
       {allCards.cards?.map((option, index) => (
         <CardModel
           onCardClick={onCardClick}

@@ -14,15 +14,17 @@ export default function CardModel({
   return (
     <div
       onClick={handleClick}
-      className="flex flex-col items-center justify-center p-4 cursor-pointer hover:scale-105 transition-transform"
+      className="mb-3 rounded-lg shadow-lg bg-white dark:bg-gray-800 flex flex-col items-center justify-center p-4 cursor-pointer hover:scale-105 transition-transform border border-black"
     >
-      <h1 className="text-center mb-2">{name}</h1>
+      <h1 className="text-3xl dark:text-gray-100 font-bold underline text-center">
+        {name}
+      </h1>
       <img
         src={image}
         alt="card image"
-        className="w-full h-40 object-contain mb-2"
+        className="w-full mx-auto h-40 object-contain mb-2"
       />
-      <span className="text-3xl font-bold underline text-center">
+      <span className="block dark:text-green-400 text-2xl font-bold text-center mb-2 ">
         {percent * 100}% TNA
       </span>
     </div>
