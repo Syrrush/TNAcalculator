@@ -19,7 +19,7 @@ export default function Calculator({ selectedCard }) {
     setResultado(amount);
   };
   return (
-    <div className="p-4 dark:bg-gray-800 dark:text-gray-100 mt-32 mr-20">
+    <div className="p-4 dark:bg-gray-800 dark:text-gray-100 mr-20 sticky top-32 ">
       <h2 className="text-xl font-bold mb-4">
         Complete la información para {selectedCard?.name}
       </h2>
