@@ -16,7 +16,7 @@ export default function CardModel({
       onClick={handleClick}
       className="mb-3 rounded-lg shadow-lg bg-white dark:bg-gray-800 flex flex-col items-center justify-center p-4 cursor-pointer hover:scale-105 transition-transform border border-black"
     >
-      <h1 className="text-3xl dark:text-gray-100 font-bold underline text-center">
+      <h1 className="text-3xl dark:text-gray-100 font-bold underline text-center pb-3">
         {name}
       </h1>
       <img
